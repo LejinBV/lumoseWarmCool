@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body * {
+  font-family: "Poppins", sans-serif;
+}
+
+.interiorWrap {
+  height: 100vh;
+  background: url(https://i.ibb.co/qW3PM7k/Cool-L.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.interiorWrap .ovelay-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  background: url(https://i.ibb.co/fv8f2qp/Cool-H.png) no-repeat;
+  background-size: cover;
+}
+.interiorWrap.warm {
+  background: url(https://i.ibb.co/NFbDYNg/Warm-L.png) no-repeat;
+  background-size: cover;
+}
+.interiorWrap.warm .ovelay-bg {
+  background: url(https://i.ibb.co/dMf3jG1/Warm-H.png) no-repeat;
+  background-size: cover;
+}
+.interiorWrap .controls {
+  width: 100%;
+  max-width: 250px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 19px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  right: 35px;
+  bottom: 35px;
+  z-index: 5;
+  border-radius: 15px;
+}
+.interiorWrap .controls .button {
+  padding-left: 5px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 15px;
+  cursor: pointer;
+  text-align: center;
+  padding-right: 5px;
+  cursor: pointer;
+}
+.interiorWrap .controls .button span {
+  width: 0px;
+  margin: auto;
+  transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+}
+.interiorWrap .controls .button input[type=radio] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+.interiorWrap .controls .button input[type=radio]:checked ~ span {
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  background: #00B2E3;
+}
+.interiorWrap .controls .button.orange input[type=radio]:checked ~ span {
+  background: #FFB82B;
+}
+.interiorWrap .controls .value2 {
+  display: none;
+}
+.interiorWrap .controls .range {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+  outline: none;
+  transition: opacity 0.2s;
+  border-radius: 15px;
+}
+.interiorWrap .controls .range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.interiorWrap .controls .range::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  -moz-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=style.css.map */
